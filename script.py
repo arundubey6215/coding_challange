@@ -21,6 +21,6 @@ def cuts(x,l):
 
 with open("myfile.txt") as f:
         for line in f:
-            with open('mycsv', 'w', encoding='utf-8') as csv_file:
+            with open('mycsv.csv', 'w', encoding='utf-8') as csv_file:
                 writer = csv.writer(csv_file, delimiter=',')
                 writer.writerow(list(cuts(line, list(map(int, list2)))))
